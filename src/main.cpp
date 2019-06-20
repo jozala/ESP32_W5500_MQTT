@@ -109,6 +109,12 @@ void loop() {
     Serial.print("mydevice/uptime <- ");
     Serial.println(uptimeInSec);
     mqttClient.publish("mydevice/uptime", uptimeInSec.c_str());
+    mqttClient.publish("mydevice/fakemessage", "sending long message to check -> of this influence stability");
+    mqttClient.publish("mydevice/fakemessage", "and another to check if -> of this influence stability");
+    mqttClient.publish("mydevice/fakemessage", "and even one more to check if -> of this influence stability");
+    mqttClient.publish("mydevice/fakemessage2", "sending long message to check -> of this influence stability");
+    mqttClient.publish("mydevice/fakemessage2", "and another to check if -> of this influence stability");
+    mqttClient.publish("mydevice/fakemessage2", "and even one more to check if -> of this influence stability");
     lastMqttPublishTime = now;
   }
 }
