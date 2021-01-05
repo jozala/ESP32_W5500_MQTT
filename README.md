@@ -6,6 +6,8 @@ Simple example of using Arduino Ethernet library with ESP32 and W5500 to subscri
 IMPORTANT: 
 **It has been created to present intermittent connection problems which seems to occur on W5500, but not on WiFi connection.**
 
+I didn't have time, but the problem/solution  described in [this comment](https://github.com/PaulStoffregen/Ethernet/issues/39#issuecomment-711109000) may be related.
+
 ## Physical connection between ESP32 and W5500
 
 * GPIO23 <--> MOSI
